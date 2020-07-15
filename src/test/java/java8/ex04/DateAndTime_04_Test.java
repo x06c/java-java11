@@ -39,7 +39,7 @@ public class DateAndTime_04_Test {
     @Test
     public void test_localDateTime_parse() {
 
-        // TODO créer un objet LocalTime à l'heure 2 mars 2009 à 09h30m00s à l'aide de la méthode parse
+        // TODO créer un objet LocalDateTime à l'heure 2 mars 2009 à 09h30m00s à l'aide de la méthode parse
         LocalDateTime result = null;
 
         // TODO valoriser les différentes variables afin de rendre le test passant
