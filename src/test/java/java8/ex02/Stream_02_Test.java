@@ -24,7 +24,8 @@ public class Stream_02_Test {
         List<Order> orders = new Data().getOrders();
 
         // Trouver la liste des clients ayant déjà passés une commande
-        List<Customer> result = null;
+
+        List<Customer> result = orders.stream().filter(order -> !order.getPizzas().isEmpty()).map(order -> order.getCustomer()).distinct().collect(Collectors.toList());
 
         assertThat(result, hasSize(2));
     }
